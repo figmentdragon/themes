@@ -1,0 +1,676 @@
+/*
+Theme Name: ClubBlog
+Theme URI: https://www.thewpclub.com/clubblog-wordpress-theme/
+Author: The WP Club
+Author URI: https://www.thewpclub.com
+Description: A Free WordPress Blog / Magazine / Personal / Writers Theme. ClubBlog is a clean minimal and responsive WordPress theme well suited for fashion, writers, travel, health, business, finance, portfolio, design, art, photography, personal or any other creative websites and blogs. Developed with bootstrap framework that makes it mobile and tablets friendly. Get free support at https://ask.thewpclub.com/
+Version: 1.1.6
+Tested up to: 5.7.1
+Requires PHP: 5.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: clubblog
+Tags: custom-menu, custom-colors, custom-header, sticky-post, featured-images, translation-ready, threaded-comments, blog
+*/
+
+/* -------- Index --------
+1.0 - Default
+2.0 - Typography
+3.0 - Layout
+    3.1  Navigation
+    3.2  Header
+    3.3  Content
+    3.4  Front Page
+    3.5  Posts
+    3.6  Pagination
+    3.7  Page
+    3.8  Sidebar
+    3.9  Comments
+    3.10 Footer
+    3.11 Colors
+4.0 - Print Media
+*/
+
+/* --------------------------------------------------------------
+1.0 Default
+-------------------------------------------------------------- */
+
+/* Form */
+.form-control {
+    min-height: 44px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #e7e7e7;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+select {
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn-search,
+.btn-submit {
+    height: 44px;
+    border: 0;
+    font-size: .8rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-search:hover,
+.btn-search:focus,
+.btn-submit:hover,
+.btn-submit:focus {
+    color: #fff;
+}
+
+
+/* WordPress Core */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    margin: 5px auto 5px auto;
+    display: block;
+}
+
+.alignright {
+    margin: 5px 0 20px 20px;
+    float:right;
+}
+
+.alignleft {
+    margin: 5px 20px 20px 0;
+    float: left;
+}
+
+a img.alignright {
+    margin: 5px 0 20px 20px;
+    float: right;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    margin: 5px 20px 20px 0;
+    float: left;
+}
+
+a img.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.wp-caption {
+    max-width: 96%;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+    font-size: 11px;
+}
+
+.screen-reader-text {
+    width: 1px;
+    height: 1px;
+    position: absolute !important;
+    white-space: nowrap;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    width: auto;
+    height: auto;
+    padding: 15px 23px 14px;
+    top: 5px;
+    left: 5px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #21759b;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    display: block;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
+.gallery-caption {
+    margin-bottom: 0;
+    padding: 0 10px 0 0;
+    text-align: left;
+    display: block;
+}
+
+.sticky,
+.bypostauthor {
+
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+
+thead th {
+    border-bottom: 2px solid #bbb;
+    padding-bottom: 0.5em;
+}
+
+th {
+    padding: 0.4em;
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1px solid #eee;
+}
+
+td {
+    padding: 0.4em;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+/* --------------------------------------------------------------
+2.0 Typography
+-------------------------------------------------------------- */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    color: #696969;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+a {
+    color: #696969;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------
+3.0 Layout
+-------------------------------------------------------------- */
+
+/* 3.1 Navigation */
+.navbar {
+    -webkit-box-shadow: 0 16px 10px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 16px 10px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 16px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    line-height: 1.1;
+    font-size: .9rem;
+}
+
+.navbar-brand img {
+    max-height: 80px;
+}
+
+.navbar-brand span.site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+.navbar-brand span.site-description {
+    font-size: .8rem;
+    opacity: .7;
+}
+
+.navbar-toggler {
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler .navbar-toggler-line {
+    width: 100%;
+    height: 2px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-item {
+    font-size: .8rem;
+}
+
+.navbar-nav .dropdown-item:hover,
+.navbar-nav .dropdown-item:focus {
+    background-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav .dropdown-menu {
+       margin-top: 0;
+       border: 0;
+       border-radius: 0;
+    }
+}
+
+
+/* 3.2 Header */
+.site-header {
+    height: 300px;
+}
+
+.home .site-header {
+    height: 500px;
+}
+
+.site-header {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.site-header:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.3);
+    content: "";
+}
+
+.site-header .header {
+    line-height: 1.8;
+    font-size: .9rem;
+    z-index: 2;
+}
+
+.site-header .header h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* 3.3 Content */
+
+
+/* 3.4 Front Page */
+
+
+/* 3.5 Posts */
+.post-item {
+    border-bottom: 1px dotted #d4d4d4;
+}
+
+.post-item .post-title h2 {
+    font-size: 1.5rem;
+    word-break: break-all;
+}
+
+.post-item .post-title h2 a {
+    color: #333;
+}
+
+.post-item .post-meta {
+    font-size: .7rem;
+    color: #7f7f7f;
+}
+
+.post-item .post-meta a {
+    color: #7f7f7f;
+}
+
+.post-item .post-categories-list {
+    top: 0;
+    left: 0;
+}
+
+.post-item .post-categories-list .post-categories {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+}
+
+.post-item .post-categories-list .post-categories li {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    float: left;
+}
+
+.post-item .post-categories-list .post-categories li:last-of-type {
+    margin-right: 0;
+}
+
+.post-item .post-categories-list .post-categories li a {
+    padding: .5rem .8rem;
+    border-radius: 4px;
+    font-size: .7rem;
+    color: #fff;
+    display: table;
+}
+
+.post-item .post-image img {
+    border-bottom: 7px solid;
+}
+
+.post-item .post-message {
+    line-height: 1.8;
+}
+
+.post-item .post-message a {
+    text-decoration: underline;
+}
+
+.post-item .post-edit a {
+    text-decoration: underline;
+}
+
+.post-item .post-tags .tags {
+    display: table;
+}
+
+.post-item .post-tags .tags a {
+    margin-bottom: .25rem;
+    margin-right: .25rem;
+    padding: .25rem .5rem;
+    border-radius: 4px;
+    font-size: .7rem;
+    color: #fff;
+    float: left;
+    display: table;
+}
+
+.post-item-1,
+.post-item-2 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border-bottom: 7px solid;
+}
+
+.post-item-1:after,
+.post-item-2:after {
+    width: 100%;
+    height: 175px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 75%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.75) 75%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.75) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    content: "";
+}
+
+.post-item-1 .post-info,
+.post-item-2 .post-info {
+    bottom: 0;
+    z-index: 2;
+}
+
+.single-post .post-item {
+    border-bottom: 0;
+}
+
+
+/* 3.6 Pagination */
+.nav-links .page-numbers {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 1px;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border-radius: 4px;
+    text-align: center;
+    display: table;
+    float: left;
+}
+
+.nav-links .page-numbers.current {
+    color: #fff;
+}
+
+
+/* 3.7 Page */
+.page-message {
+    line-height: 1.8;
+}
+
+.page-message a {
+    text-decoration: underline;
+}
+
+.page-edit a {
+    text-decoration: underline;
+}
+
+
+/* 3.8 Sidebar */
+.sidebar-item {
+    border-bottom: 7px solid;
+}
+
+.sidebar-item h2 {
+    font-size: 1.5rem;
+}
+
+.sidebar-item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-item li {
+    line-height: 1.8;
+}
+
+.sidebar-item ul.sub-menu {
+    margin-left: 1rem;
+}
+
+.sidebar-item img {
+    max-width: 100%;
+}
+
+
+/* 3.9 Comments */
+.comment.depth-1 {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border-bottom: 7px solid;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.04);
+}
+
+.comment.depth-5 {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #e7e7e7;
+}
+
+.comment a {
+    text-decoration: underline;
+}
+
+.comment .children {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.comment .avatar {
+    border-radius: 100%;
+}
+
+.comment .comment-meta {
+    margin-bottom: .5rem;
+    font-size: .8rem;
+    color: #7f7f7f;
+}
+
+.comment .comment-meta a {
+    color: #7f7f7f;
+}
+
+.comment .comment-meta.commentmetadata a {
+    text-decoration: none;
+}
+
+.comment .comment-meta.commentmetadata a.comment-edit-link {
+    text-decoration: underline;
+}
+
+.comment .reply a {
+    padding: .25rem .5rem;
+    border-radius: 4px;
+    font-size: .75rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* 3.10 Footer */
+footer {
+    font-size: .7rem;
+    color: #b1b1b1;
+}
+
+footer .footer-main {
+    border-top: 1px solid #f2f2f2;
+}
+
+
+/* 3.11 Colors */
+
+/* Color 1 */
+.navbar-toggler,
+.post-item .post-categories-list .post-categories li a,
+.post-item .post-tags .tags a,
+.nav-links .page-numbers.current {
+    background-color: #f8859f;
+}
+
+.post-item .post-image img,
+.post-item-1,
+.post-item-2 {
+    border-color: #f8859f;
+}
+
+a:hover,
+a:focus,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link,
+footer a {
+    color: #f8859f;
+}
+
+/* Color 2 */
+.btn-search,
+.btn-submit,
+.btn-search:hover,
+.btn-search:focus,
+.btn-submit:hover,
+.btn-submit:focus,
+.comment .reply a {
+    background-color: #3fe8cf;
+}
+
+.sidebar-item,
+.comment.depth-1 {
+    border-color: #3fe8cf;
+}
+
+/* Header Color */
+.navbar-brand {
+    color: #333;
+}
+
+/* --------------------------------------------------------------
+4.0 Media Queries
+-------------------------------------------------------------- */
+
+@media print {
+
+}

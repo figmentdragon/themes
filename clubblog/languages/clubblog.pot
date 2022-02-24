@@ -1,0 +1,182 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: ClubBlog\n"
+"POT-Creation-Date: 2021-05-15 20:07+0200\n"
+"PO-Revision-Date: 2021-05-15 20:07+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:21
+msgid "The Page You Are Looking For Doesn&rsquo;t Exist."
+msgstr ""
+
+#: 404.php:23
+msgid "We are very sorry for the inconvenience."
+msgstr ""
+
+#: 404.php:24
+msgid "Perhaps, Try using the search box below."
+msgstr ""
+
+#: category.php:21
+msgid "Latest Posts Under:"
+msgstr ""
+
+#: comments.php:15
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:15 inc/post-meta.php:15
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:15 inc/post-meta.php:15
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:18 comments.php:28
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:19 comments.php:29
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:20 comments.php:30
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:36
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:17
+msgid "Theme by"
+msgstr ""
+
+#. Author URI of the plugin/theme
+#: footer.php:19
+msgid "https://www.thewpclub.com"
+msgstr ""
+
+#: footer.php:26
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: functions.php:63
+msgid "Default Color "
+msgstr ""
+
+#: functions.php:68
+msgid "Sub Color "
+msgstr ""
+
+#: functions.php:128
+msgid "Top Primary Menu"
+msgstr ""
+
+#: functions.php:232
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions.php:243
+msgid "Header"
+msgstr ""
+
+#: functions.php:268
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: functions.php:312
+msgid "Name"
+msgstr ""
+
+#: functions.php:313
+msgid "Email"
+msgstr ""
+
+#: functions.php:314
+msgid "Website"
+msgstr ""
+
+#: functions.php:326
+msgid "Comment"
+msgstr ""
+
+#: header.php:28
+msgid "Skip to content"
+msgstr ""
+
+#: inc/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr ""
+
+#: inc/post-meta.php:13
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: inc/post-meta.php:15
+msgid "0 Comments"
+msgstr ""
+
+#: no-results.php:9
+msgid "Oops..! No Results Found."
+msgstr ""
+
+#: no-results.php:10
+msgid "Perhaps, Try searching with different keywords."
+msgstr ""
+
+#: page.php:31 single.php:57
+msgid "Pages:"
+msgstr ""
+
+#: page.php:38 single.php:64
+msgid "Edit"
+msgstr ""
+
+#: search.php:21
+msgid "Search Results For:"
+msgstr ""
+
+#: searchform.php:13 searchform.php:16
+msgid "Search"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "ClubBlog"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.thewpclub.com/clubblog-wordpress-theme/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A Free WordPress Blog / Magazine / Personal / Writers Theme. ClubBlog is a "
+"clean minimal and responsive WordPress theme well suited for fashion, "
+"writers, travel, health, business, finance, portfolio, design, art, "
+"photography, personal or any other creative websites and blogs. Developed "
+"with bootstrap framework that makes it mobile and tablets friendly. Get free "
+"support at https://ask.thewpclub.com/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "The WP Club"
+msgstr ""

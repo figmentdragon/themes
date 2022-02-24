@@ -1,0 +1,915 @@
+/*
+Theme Name: Darcie
+Description: Used to style Gutenberg Blocks.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Blocks - General Styles
+2.0 Blocks - Common Blocks
+3.0 Blocks - Formatting
+4.0 Blocks - Layout Elements
+5.0 Blocks - Widgets
+6.0 Blocks - Colors
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Blocks - General Styles
+--------------------------------------------------------------*/
+
+/* Captions */
+
+[class^=""]:not(.gallery) figcaption {
+	border: 0;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.87;
+	margin: 0;
+	padding: 0px;
+	text-align: center;
+}
+
+.no-sidebar .alignfull {
+	margin-left  : calc( -100vw / 2 + 100% / 2 );
+    margin-right : calc( -100vw / 2 + 100% / 2 );
+    max-width    : 100vw;
+}
+
+.no-sidebar .alignwide  {
+	margin-left  : calc( -96vw / 2 + 100% / 2 );
+    margin-right : calc( -96vw / 2 + 100% / 2 );
+	max-width: 96vw;
+}
+
+.alignfull.cover,
+.alignwide.cover {
+	width: auto;
+}
+
+/* 1024px */
+@media screen and (min-width: 64em) {
+	.no-sidebar .alignfull  {
+		margin-left  : calc( -94vw / 2 + 100% / 2 );
+	    margin-right : calc( -94vw / 2 + 100% / 2 );
+		max-width: 94vw;
+	}
+
+	.no-sidebar.fluid-layout .alignfull {
+		margin-left  : calc( -100vw / 2 + 100% / 2 );
+	    margin-right : calc( -100vw / 2 + 100% / 2 );
+	    max-width    : 100vw;
+	}
+
+	.no-sidebar .alignwide  {
+		margin-left  : calc( -88vw / 2 + 100% / 2 );
+	    margin-right : calc( -88vw / 2 + 100% / 2 );
+		max-width: 88vw;
+	}
+}
+
+/* 1290px */
+@media screen and (min-width: 80.625em) {
+	.no-sidebar .alignfull  {
+		margin-left  : calc( -1290px / 2 + 100% / 2 );
+	    margin-right : calc( -1290px / 2 + 100% / 2 );
+		max-width: 1290px;
+	}
+
+	.no-sidebar:not(.fluid-layout) .alignwide {
+	    margin-left: -120px;
+	    margin-right: -120px;
+	    max-width: 1280px;
+	}
+
+	.no-sidebar.full-width-layout:not(.fluid-layout) .alignwide {
+		margin-left: -10px;
+		margin-right: -10px;
+		max-width: 1250px;
+	}
+}
+
+/*--------------------------------------------------------------
+2.0 Blocks - Common Blocks
+--------------------------------------------------------------*/
+
+/* Paragraph */
+
+p.has-drop-cap:not(:focus)::first-letter {
+	float: left;
+    font-size: 110px;
+    font-size: 6.875rem;
+    font-weight: 700;
+    line-height: 0.7;
+    margin: 14px 16px 5px -3px;
+}
+
+/* Image */
+
+.image {
+	margin-bottom: 28px;
+}
+
+.image figure {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.image figure.alignleft {
+	margin-right: 28px;
+}
+
+.image figure.alignright {
+	margin-left: 28px;
+}
+
+/* Gallery */
+
+.gallery {
+	margin-bottom: 28px;
+	margin-left: 0;
+}
+
+.gallery figcaption {
+	font-style: italic;
+}
+
+.gallery.aligncenter {
+	display: flex;
+	margin: 0 -8px;
+}
+
+/*--------------------------------------------------------------
+3.0 Blocks - Formatting
+--------------------------------------------------------------*/
+
+/* Editor Font Size */
+.has-extra-small-font-size {
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	line-height: 1.62;
+}
+
+.has-small-font-size {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.has-normal-font-size {
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.75;
+	margin-bottom: 1.4em;
+}
+
+.has-large-font-size {
+	font-size: 28px;
+	font-size: 1.75rem;
+	font-weight: 400;
+	line-height: 1.43;
+	margin-top: 1.333333333333333em;
+	margin-bottom: 0.6666666666666667em;
+}
+
+.has-extra-large-font-size {
+	font-size: 36px;
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 1.33;
+	margin-top: 0.9655172413793103em;
+	margin-bottom: 0.4827586206896552em;
+}
+
+.has-huge-font-size {
+	font-size: 42px;
+	font-size: 2.625rem;
+	font-weight: 400;
+	line-height: 1.23;
+	margin-top: 0.8em;
+	margin-bottom: 0.4em;
+}
+
+@media screen and (min-width: 64em) {
+	.has-normal-font-size {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+
+	.has-large-font-size {
+		font-size: 36px;
+		font-size: 2.25rem;
+	}
+
+	.has-extra-large-font-size {
+		font-size: 42px;
+		font-size: 2.625rem;
+	}
+
+	.has-huge-font-size {
+		font-size: 48px;
+		font-size: 3rem;
+	}
+
+}
+
+@media screen and (min-width: 85.375em) {
+
+	.has-large-font-size {
+		font-size: 42px;
+		font-size: 2.625rem;
+	}
+
+	.has-extra-large-font-size {
+		font-size: 48px;
+		font-size: 3rem;
+	}
+
+	.has-huge-font-size {
+		font-size: 58px;
+		font-size: 3.625rem;
+	}
+
+}
+
+@media screen and (min-width: 100em) {
+	.has-large-font-size {
+		font-size: 48px;
+		font-size: 3rem;
+	}
+
+	.has-extra-large-font-size {
+		font-size: 58px;
+		font-size: 3.625rem;
+	}
+
+	.has-huge-font-size {
+		font-size: 62px;
+		font-size: 3.875rem;
+	}
+
+}
+
+@media screen and (min-width: 120em) {
+	.has-huge-font-size {
+		font-size: 70px;
+		font-size: 4.375rem;
+	}
+}
+
+.table td,
+.table th {
+	border-bottom: 0;
+	border-top: 0;
+	padding: 12px 28px;
+}
+
+.table th {
+	border-bottom: 1px solid;
+	border-top: 0;
+	border-left: 0;
+}
+
+pre.verse {
+	font-family: Inconsolata, monospace;
+}
+
+figure.table.is-style-stripes table {
+	border-color: transparent;
+}
+.table.is-style-stripes tr,
+.table.is-style-stripes thead,
+.table.is-style-stripes tfoot,
+.table.is-style-stripes td{
+	border: 0;
+}
+/* Quotes */
+
+.quote,
+.quote.has-text-align-right {
+	border: 0;
+}
+
+.quote.has-text-align-right,
+.quote.has-text-align-right cite {
+	text-align: right;
+}
+
+.quote.has-text-align-left,
+.quote.has-text-align-left cite {
+	text-align: left;
+}
+
+.quote.has-text-align-center,
+.quote.has-text-align-center cite {
+	text-align: center;
+}
+
+.quote,
+.pullquote {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-style: italic;
+	font-stretch: normal;
+	font-weight: 700;
+	line-height: 1.59;
+	padding: 2.863636363636364em 0 0 0;
+	position: relative;
+	margin: 0 0 1.272727272727273em 0 ;
+}
+
+.pullquote.is-style-solid-color blockquote {
+	max-width: 100%;
+}
+
+.pullquote.alignright.is-style-solid-color,
+.pullquote.alignleft.is-style-solid-color {
+	border: 0;
+}
+
+.pullquote.alignright.is-style-solid-color,
+.pullquote.is-style-solid-color,
+.pullquote.alignleft.is-style-solid-color,
+.pullquote.aligncenter.is-style-solid-color {
+	padding: 35px;
+}
+
+.quote.has-text-align-center {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pullquote p,
+.pullquote.is-style-solid-color blockquote p,
+.pullquote.alignleft p,
+.pullquote.alignright p {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+.quote p,
+.pullquote.is-style-solid-color blockquote p,
+.pullquote p {
+	margin-bottom: 14px;
+	line-height: 1.46;
+}
+
+.quote cite,
+.pullquote cite {
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 16px;
+	font-size: 1rem;
+	color: #999999;
+	line-height: 1.75;
+	display: block;
+}
+
+.quote.is-style-large cite {
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: inherit;
+	color: #999999;
+}
+
+.quote.has-text-align-right,
+.quote.is-large,
+.quote.is-style-large {
+	margin: 0 0 1.272727272727273em 0;
+	padding: 3.181818181818182em 0 0 0;
+}
+
+.quote:before {
+	content: "\201C";
+	display: block;
+	float: left;
+	font-family: Georgia;
+	font-size: 84px;
+	font-size: 5.25rem;
+	font-style: normal;
+	font-weight: 700;
+	height: 0;
+	left: 50%;
+	line-height: normal;
+	position: absolute;
+	margin-top: 5px;
+	top: -17px;
+	transform: translateX(-50%);
+}
+
+blockquote.quote.is-style-large cite, 
+blockquote.quote.is-style-large footer, 
+blockquote.quote.is-large cite, 
+blockquote.quote.is-large footer {
+	text-align: left;
+}
+
+blockquote.quote.has-text-align-center.is-style-large cite, 
+blockquote.quote.has-text-align-center.is-style-large footer, 
+blockquote.quote.has-text-align-center.is-large cite, 
+blockquote.quote.has-text-align-center.is-large footer {
+	text-align: center;
+}
+
+blockquote.quote.has-text-align-right.is-style-large cite, 
+blockquote.quote.has-text-align-right.is-style-large footer, 
+blockquote.quote.has-text-align-right.is-large cite, 
+blockquote.quote.has-text-align-right.is-large footer {
+	text-align: right;
+}
+
+/* PULLQUOTE */
+
+.pullquote {
+	padding: 21px 0;
+}
+
+.pullquote.is-style-solid-color,
+figure.table.is-style-stripes tbody tr:nth-child(2n+1) {
+	border: 0;
+}
+
+.pullquote {
+	border-bottom: 5px solid;
+	border-top: 5px solid;
+}
+
+.pullquote.alignleft,
+.pullquote.alignright {
+	border-bottom: 0;
+	border-top: 0;
+}
+
+.pullquote.alignleft blockquote,
+.pullquote.alignright blockquote {
+	margin: 0;
+}
+
+.pullquote.alignleft {
+	border-left: 5px solid;
+	margin: 0.3181818181818182em 1.818181818181818em 1.272727272727273em 0;
+	padding: 0 0 0 35px;
+	text-align: left;
+}
+
+.pullquote.alignright {
+	border-right: 5px solid;
+	margin: 0.3181818181818182em 0 1.272727272727273em 1.818181818181818em;
+	padding: 0 35px 0 0;
+	text-align: right;
+}
+.pullquote.aligncenter.is-style-solid-color blockquote,
+.pullquote.alignfull.is-style-solid-color blockquote,
+.pullquote.alignwide.is-style-solid-color blockquote {
+	text-align: center;
+	margin: 0;
+}
+
+.pullquote.is-style-solid-color blockquote cite {
+	text-transform: capitalize;
+}
+.pullquote.alignright.is-style-solid-color blockquote {
+	text-align: right;
+}
+.pullquote.aligncenter.is-style-solid-color blockquote {
+	text-align: center;
+}
+/* BUTTONS */
+
+.file .file__button,
+.button .button__link {
+	font-size: 16px;
+	font-size: 1rem;
+	border-radius: 32px;
+	font-weight: 700;
+	line-height: 1.4;
+	font-family: 'poppins',sans-serif;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+
+@media screen and (min-width: 64em) {
+	.file .file__button,
+	.button .button__link  {
+		padding: 18px 35px;
+	}
+}
+
+@media screen and (min-width: 85.375em) {
+	.file .file__button,
+	.button .button__link {
+		padding: 22px 42px;
+	}
+}
+
+figure.table.is-style-stripes {
+	border-bottom: 0;
+}
+
+pre.code {
+	border: 0;
+	border-radius: 0;
+	color: #999;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-family: Inconsolata, monospace;
+	padding: 1.666666666666667em;
+}
+
+.buttons {
+	margin-bottom: 28px;
+	margin-top: 28px;
+}
+
+.cover {
+	margin-bottom:  1.75em;
+}
+
+/*--------------------------------------------------------------
+5.0 Blocks - Widgets
+--------------------------------------------------------------*/
+
+/* Archives, Categories & Latest Posts */
+
+.archives.aligncenter,
+.categories.aligncenter,
+.latest-posts.aligncenter {
+	list-style-position: inside;
+	text-align: center;
+}
+
+.latest-posts.latest-posts__list {
+	list-style: disc;
+}
+
+.categories-list li,
+.archives-list li,
+.latest-posts.latest-posts__list li {
+	margin-bottom: 14px;
+}
+
+/* Comments */
+
+.latest-comments article {
+	margin-bottom: 3em;
+}
+
+.blog:not(.has-sidebar) #primary .latest-comments article,
+.archive:not(.page-one-column):not(.has-sidebar) #primary .latest-comments article,
+.search:not(.has-sidebar) #primary .latest-comments article {
+	float: none;
+	width: 100%;
+}
+
+.latest-comments__comment,
+.latest-comments__comment-excerpt p {
+	font-size: inherit;
+}
+
+.latest-comments .avatar,
+.latest-comments__comment-avatar {
+	border-radius: 0;
+}
+
+.latest-comments__comment-meta {
+	margin-bottom: 14px;
+}
+
+.latest-comments__comment-author,
+.latest-comments__comment-link {
+	text-decoration: none;
+}
+
+.latest-comments__comment-date {
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1.75;
+	margin-top: 7px;
+	text-transform: capitalize;
+}
+
+.gallery .item {
+	padding-left: 0;
+}
+
+.calendar a {
+    text-decoration: none;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+figure.table tfoot {
+	border-width: 1px;
+}
+
+figure.table thead {
+	border-bottom:  0;
+}
+
+
+
+
+@media screen and (min-width: 100em) {
+.quote,
+.pullquote {
+    font-size: 22px;
+    font-size: 1.375rem;
+ }
+}
+
+/*--------------------------------------------------------------
+6.0 Blocks - Colors
+--------------------------------------------------------------*/
+
+blockquote {
+	margin: 14px 21px;
+}
+
+.calendar table th {
+	background-color: transparent;
+}
+
+.file .file__button,
+.button .button__link {
+	background-color: transparent;
+	border: 2px solid #ff2906;
+	color: #fff;
+}
+
+.search .search__inside-wrapper {
+	position: relative;
+}
+
+.search .search__button{
+	background-color: transparent;
+	border: none;
+	padding: .375em .625em;
+	color: #32373c;
+	margin-left: .625em;
+	word-break: normal;
+	position: absolute;
+	right: 0;
+	font-size: 0px;
+	background: transparent;
+	border: none;
+	height: 54px;
+	width: 50px;
+	top: 14px;
+	border-radius: 0;
+}
+
+.search .search__button:hover {
+	background-color: #ff2906;
+}
+
+.file .file__button:hover,
+
+.button .button__link:hover {
+	background-color: #ff2906;
+	border: 2px solid #ff2906;
+	color: #fff;
+}
+
+.is-style-outline .button__link,
+.is-style-outline .more-link,
+.is-style-outline .button {
+	border: 2px solid #ff2906;
+	background-color: transparent;
+	color: #fff;
+}
+
+.is-style-outline .button__link:hover,
+.is-style-outline .more-link:hover,
+.is-style-outline .button:hover {
+	border: 2px solid #ff2906;
+	background-color: #ff2906;
+	color: #fff;
+}
+
+.is-style-outline > .button__link:not(.has-text-color),
+.button__link.is-style-outline:not(.has-text-color) {
+	color: #fff;
+}
+
+.is-style-outline .button__link:hover,
+.is-style-outline .button__link:focus,
+.is-style-outline .more-link:hover,
+.is-style-outline .more-link:focus,
+.is-style-outline .button:hover,
+.is-style-outline .button:focus {
+	border-color: transparent;
+}
+
+.file .file__button:hover,
+.file .file__button:focus,
+.button .button__link:hover,
+.button .button__link:focus {
+	border-color: #ff2906;
+	color: #fff;
+}
+.is-style-fill .file__button:hover,
+.is-style-fill .file__button:focus,
+.is-style-fill .button__link:hover,
+.is-style-fill .button__link:focus {
+	background-color: transparent;
+	color: #fff;
+
+}
+
+/* .table,
+.table caption,
+.table th,
+.table td,
+figure.table tfoot,
+figure.table thead {
+	border-color: #282828;
+} */
+
+.pullquote,
+.pullquote.alignleft,
+.pullquote.alignright,
+.quote.is-large, .quote.is-style-large,
+.quote {
+	border-color: #ff2906;
+}
+
+.quote:before {
+	color: #ff2906;
+}
+
+.latest-comments__comment-date,
+[class^=""]:not(.gallery) figcaption {
+	color: #999;
+}
+
+/* White Color ---------------------
+------------------------------------ */
+
+.pullquote.is-style-solid-color blockquote.has-white-color cite,
+.button .button__link.has-white-color,
+.button.is-style-outline > .button__link.has-white-color,
+.button__link.is-style-outline.has-white-color,
+.has-white-color {
+	color: #ffffff;
+}
+
+.pullquote.is-style-solid-color.has-white-background-color,
+.button .button__link.has-white-background-color,
+.has-white-background-color {
+	background-color: #ffffff;
+}
+
+.is-style-outline > .button__link.has-white-color,
+.button__link.is-style-outline.has-white-color {
+	border-color: #ffffff;
+}
+
+/* Black Color ---------------------
+------------------------------------ */
+
+.pullquote.is-style-solid-color blockquote.has-black-color cite,
+.button .button__link.has-black-color,
+.button.is-style-outline > .button__link.has-black-color,
+.button__link.is-style-outline.has-black-color,
+.has-black-color {
+	color: #000000;
+}
+
+.pullquote.is-style-solid-color.has-black-background-color,
+.button .button__link.has-black-background-color,
+.has-black-background-color {
+	background-color: #000000;
+}
+
+.is-style-outline > .button__link.has-black-color,
+.button__link.is-style-outline.has-black-color {
+	border-color: #000000;
+}
+
+/* Light Black Color ---------------------
+------------------------------------ */
+
+.pullquote.is-style-solid-color blockquote.has-light-black-color cite,
+.button .button__link.has-light-black-color,
+.button.is-style-outline > .button__link.has-light-black-color,
+.button__link.is-style-outline.has-light-black-color,
+.has-light-black-color {
+	color: #111111;
+}
+
+.pullquote.is-style-solid-color.has-light-black-background-color,
+.button .button__link.has-light-black-background-color,
+.has-light-black-background-color {
+	background-color: #111111;
+}
+
+.is-style-outline > .button__link.has-light-black-color,
+.button__link.is-style-outline.has-light-black-color {
+	border-color: #111111;
+}
+
+
+/* Gray Color ---------------------
+------------------------------------ */
+
+.pullquote.is-style-solid-color blockquote.has-gray-color cite,
+.button .button__link.has-gray-color,
+.button.is-style-outline > .button__link.has-gray-color,
+.button__link.is-style-outline.has-gray-color,
+.has-gray-color {
+	color: #999999;
+}
+
+.pullquote.is-style-solid-color.has-gray-background-color,
+.button .button__link.has-gray-background-color,
+.has-gray-background-color {
+	background-color: #999999;
+}
+
+.is-style-outline > .button__link.has-gray-color,
+.button__link.is-style-outline.has-gray-color {
+	border-color: #999999;
+}
+
+/* Medium Gray Color ---------------------
+------------------------------------ */
+
+.pullquote.is-style-solid-color blockquote.has-gray-color cite,
+.button .button__link.has-gray-color,
+.button.is-style-outline > .button__link.has-gray-color,
+.button__link.is-style-outline.has-gray-color,
+.has-gray-color {
+	color: #7b7b7b;
+}
+
+.pullquote.is-style-solid-color.has-gray-background-color,
+.button .button__link.has-gray-background-color,
+.has-gray-background-color {
+	background-color: #7b7b7b;
+}
+
+.is-style-outline > .button__link.has-gray-color,
+.button__link.is-style-outline.has-gray-color {
+	border-color: #7b7b7b;
+}
+
+/* Light Gray Color ---------------------
+------------------------------------ */
+
+.pullquote.is-style-solid-color blockquote.has-gray-color cite,
+.button .button__link.has-gray-color,
+.button.is-style-outline > .button__link.has-gray-color,
+.button__link.is-style-outline.has-gray-color,
+.has-gray-color {
+	color: #f8f8f8;
+}
+
+.pullquote.is-style-solid-color.has-gray-background-color,
+.button .button__link.has-gray-background-color,
+.has-gray-background-color {
+	background-color: #f8f8f8;
+}
+
+.is-style-outline > .button__link.has-gray-color,
+.button__link.is-style-outline.has-gray-color {
+	border-color: #f8f8f8;
+}
+
+
+/* Red Color ---------------------
+------------------------------------ */
+
+.pullquote.is-style-solid-color blockquote.has-red-color cite,
+.button .button__link.has-red-color,
+.button.is-style-outline > .button__link.has-red-color,
+.button__link.is-style-outline.has-red-color,
+.has-red-color {
+	color: #ff2906;
+}
+
+.pullquote.is-style-solid-color.has-red-background-color,
+.button .button__link.has-red-background-color,
+.has-red-background-color {
+	background-color: #ff2906;
+}
+
+.is-style-outline > .button__link.has-red-color,
+.button__link.is-style-outline.has-red-color {
+	border-color: #ff2906;
+}
